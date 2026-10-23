@@ -14,8 +14,53 @@
 <body>
 
     <header>
-        <h1>Vite & Gourmand</h1>
-    </header>
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <div class="container-fluid" id="navbar-container">
+            
+            <!-- General Menu Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Brand -->
+            <a class="navbar-brand order-lg-2" href="/">Vite & Gourmand</a>
+            
+            <!-- Profile Menu Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarProfileContent" aria-controls="navbarProfileContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="bi bi-person"></span>
+            </button>
+            
+            <!-- General Menu section -->
+            <div class="collapse navbar-collapse navbar-side order-lg-1" id="navbarSupportedContent" data-bs-parent="#navbar-container">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link" href="/">Accueil</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="/">Nos Menus</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="/">Nous Contacter</a>
+                </li>
+            </ul>
+            </div>
+            
+            <!-- Profile Menu section -->
+            <div class="collapse navbar-collapse navbar-side order-lg-3" id="navbarProfileContent" data-bs-parent="#navbar-container">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link" href="/">Créer un compte</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="/">Se connecter</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+        </nav>
+            <h1>Vite & Gourmand</h1>
+        </header>
 
     <main id="main-page">
         <!-- Your content goes here -->

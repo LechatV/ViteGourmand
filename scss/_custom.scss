@@ -7,9 +7,12 @@ $primary: #D32F2F;
 $secondary: #FFF8F2;
 $dark: #4A0E14;
 $black: #240709;
-$font-family-sans-serif: "Fraunces", sans-serif !default;
-$font-family-serif: "DM Sans", serif !default;
 
-@import "../node_modules/bootstrap/scss/bootstrap";
+$white: $secondary;
+
+$font-family-sans-serif: "Fraunces", serif !default;
+$font-family-serif: "DM Sans", sans-serif !default;
+
+$navbar-nav-link-padding-x: 2rem;
 
 // Then add additional custom code here

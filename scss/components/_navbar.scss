@@ -1,0 +1,9 @@
+// Navbar customization
+
+// Adjust the navbar to be a flex container with a column layout on smaller screens
+@include media-breakpoint-up(lg) {
+  .navbar-side {
+    flex: 1 1 0;
+    width: 0;
+  }
+}
