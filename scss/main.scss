@@ -2,3 +2,13 @@
 @import 'custom';
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import 'components/navbar';
+@import 'components/footer';
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+p{
+    font-size: 12px;
+}

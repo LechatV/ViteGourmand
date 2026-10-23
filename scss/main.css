@@ -11985,4 +11985,19 @@ textarea.form-control-lg {
     flex: 1 1 0;
     width: 0;
   }
+}
+footer.footer {
+  padding: 1rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+p {
+  font-size: 12px;
 }/*# sourceMappingURL=main.css.map */
