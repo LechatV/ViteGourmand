@@ -11998,6 +11998,10 @@ html {
   min-height: 100%;
 }
 
+main {
+  margin-bottom: 210px;
+}
+
 p {
   font-size: 12px;
 }/*# sourceMappingURL=main.css.map */
