@@ -3,16 +3,23 @@
 
 // Include any default variable overrides here (though functions won’t be available)
 
+// Écrasement des couleurs par défaut de Bootstrap par celles de la charte graphique
 $primary: #D32F2F;
 $secondary: #FFF8F2;
 $dark: #4A0E14;
 $black: #240709;
 
+// Écrasement du blanc par la couleur secondaire sauf pour les fonds d'inputs
 $white: $secondary;
+$input-bg: #fff;
 
+// Écrasement des polices par défaut de Bootstrap par celles de la charte graphique
 $font-family-sans-serif: "DM Sans", sans-serif;
 $headings-font-family: "Fraunces", serif;
 
+// Écrasement des tailles de police par défaut de Bootstrap pour la navbar
 $navbar-nav-link-padding-x: 2rem;
+
+
 
 // Then add additional custom code here
