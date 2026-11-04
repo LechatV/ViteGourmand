@@ -6,6 +6,8 @@ export const allRoutes = [
     new Route("/contact", "Contact", "pages/contact.html"),
     new Route("/signin", "Connexion", "pages/signin.html"),
     new Route("/signup", "Inscription", "pages/signup.html"),
+    new Route("/conditions_generales_de_vente", "Conditions générales de vente", "pages/conditions_generales_de_vente.html"),
+    new Route("/mentions_legales", "Mentions légales", "pages/mentions_legales.html"),
 ];
 //Le titre s'affiche comme ceci : Route.titre - websitename
 export const websiteName = "Vite & Gourmand";
