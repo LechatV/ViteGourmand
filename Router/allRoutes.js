@@ -5,7 +5,7 @@ export const allRoutes = [
     new Route("/menus", "Menus", "pages/menus.html"),
     new Route("/contact", "Contact", "pages/contact.html"),
     new Route("/signin", "Connexion", "pages/signin.html"),
-    new Route("/signup", "Inscription", "pages/signup.html"),
+    new Route("/signup", "Inscription", "pages/signup.html", "js/auth/signup.js"),
     new Route("/conditions_generales_de_vente", "Conditions générales de vente", "pages/conditions_generales_de_vente.html"),
     new Route("/mentions_legales", "Mentions légales", "pages/mentions_legales.html"),
 ];
