@@ -1,22 +1,36 @@
 <section>
     <div class="container py-4" style="max-width: 950px;">
-        <h3 class="text-primary text-center py-4">Espace personnel</h3>
+        <h3 class="text-primary text-center py-4">Mes Informations</h3>
         <form>
-            <div class="mb-3">
-                <label for="NomInput" class="form-label">Nom</label>
-                <input type="text" class="form-control" id="NomInput" placeholder="Votre nom" value="John" name="Nom"> 
+            <div class="row">
+                <div class="col-12 col-lg mb-4">
+                    <label for="NomInput" class="form-label">Nom</label>
+                    <input type="text" class="form-control" id="NomInput" placeholder="Votre nom" value="Doe" name="Nom">
+                </div>
+                <div class="col-12 col-lg mb-4">
+                    <label for="PrenomInput" class="form-label">Prénom</label>
+                    <input type="text" class="form-control" id="PrenomInput" placeholder="Votre prénom" value="John" name="Prenom">
+                </div>
             </div>
-            <div class="mb-3">
-                <label for="PrenomInput" class="form-label">Prénom</label>
-                <input type="text" class="form-control" id="PrenomInput" placeholder="Votre prénom" value="Doe" name="Prenom"> 
+            <div class="row mb-4">
+                <div class="col">
+                    <label for="EmailInput" class="form-label">Email</label>
+                    <input disabled type="email" class="form-control" id="EmailInput" placeholder="test@mail.com" name="Email">
+                </div>
             </div>
-            <div class="mb-3">
-            <label for="AllergieInput" class="form-label">Allergies</label>
-            <input type="text" class="form-control" id="AllergieInput" placeholder="Vos allergies (fruits de mer, arachides…)"  value="Cacahouetes" name="Allergies">  
+            <div class="row mb-4">
+                <div class="col-6">
+                    <label for="TelInput" class="form-label">Téléphone</label>
+                    <input type="tel" class="form-control" id="TelInput" placeholder="Votre téléphone" value="0123456789" name="Telephone">
+                </div>
             </div>
             <div class="mb-3">
                 <label for="NbConvivesInput" class="form-label">Nombres de convives habituel</label>
                 <input type="number" class="form-control" id="NbConvivesInput" placeholder="Combien vous êtes habituellement ?"  value="4" name="NbConvives"> 
+            </div>
+            <div class="mb-3">
+                <label for="AllergieInput" class="form-label">Allergies</label>
+                <input type="text" class="form-control" id="AllergieInput" placeholder="Vos allergies (fruits de mer, arachides…)"  value="Cacahouetes" name="Allergies">  
             </div>
             <div class="text-center">
                 <button type="submit" class="btn btn-primary my-2">Modifier vos informations</button>

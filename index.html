@@ -49,8 +49,14 @@
             <!-- Profile Menu section -->
             <div class="collapse navbar-collapse navbar-side order-lg-3" id="navbarProfileContent" data-bs-parent="#navbar-container">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item" data-show="connected">
-                <a class="nav-link" href="/account">Espace Personnel</a>
+                <li class="nav-item dropdown" data-show="connected">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Espace Personnel
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="/account">Mes Informations</a></li>
+                    <li><a class="dropdown-item" href="/myOrders">Mes Commandes</a></li>
+                </ul>
                 </li>
                 <li class="nav-item" data-show="disconnected">
                 <a class="nav-link" href="/signup">Créer un compte</a>
