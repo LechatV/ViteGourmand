@@ -29,6 +29,14 @@ class Menu
     #[ORM\Column]
     private ?int $quantiteRestante = null;
 
+    #[ORM\ManyToOne]
+    #[ORM\JoinColumn(nullable: false)]
+    private ?Theme $theme = null;
+
+    #[ORM\ManyToOne]
+    #[ORM\JoinColumn(nullable: false)]
+    private ?Regime $regime = null;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -90,6 +98,30 @@ class Menu
     public function setQuantiteRestante(int $quantiteRestante): static
     {
         $this->quantiteRestante = $quantiteRestante;
+
+        return $this;
+    }
+
+    public function getTheme(): ?Theme
+    {
+        return $this->theme;
+    }
+
+    public function setTheme(?Theme $theme): static
+    {
+        $this->theme = $theme;
+
+        return $this;
+    }
+
+    public function getRegime(): ?Regime
+    {
+        return $this->regime;
+    }
+
+    public function setRegime(?Regime $regime): static
+    {
+        $this->regime = $regime;
 
         return $this;
     }
