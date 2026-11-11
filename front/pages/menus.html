@@ -2,94 +2,30 @@
     <div class="container py-4" style="max-width: 950px;">
         <article class="py-4">
             <h3 class="text-primary text-center">Les Menus</h3>
-            <div class="card text-bg-dark my-5" style="min-height: 170px;">
-                <img src="../images/menu_tradition.jpg" class="card-img object-fit-cover position-absolute top-0 start-0 w-100 h-100" style="filter: brightness(0.8);">
-                <div class="card-img-overlay position-relative">
-                    <div class="row m-1">
-                        <div class="col">
-                            <h5 class="card-title">Menu Tradition</h5>
-                            <p class="card-subtitle">≥ 4 personnes</p>
-                            <ul class="card-text small my-2">
-                                <li>Terrine de campagne</li>
-                                <li>Sauté de boeuf avec légumes croquants et écrasé de pommes de terre</li>
-                                <li>Crumble aux pommes et caramel</li>
-                            </ul>
-                        </div>
-                        <div class="col-auto text-end">
-                            <h5>35€</h5>
-                        </div>
-                    </div>
-                    <div class="col text-end">
-                        <a href="#" class="btn btn-primary btn-sm stretched-link">+ de détails</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card text-bg-dark my-5" style="min-height: 170px;">
-                <img src="../images/menu_pecheur.jpg" class="card-img object-fit-cover position-absolute top-0 start-0 w-100 h-100" style="filter: brightness(0.8);">
-                <div class="card-img-overlay position-relative">
-                    <div class="row m-1">
-                        <div class="col">
-                            <h5 class="card-title">Menu Pêcheur</h5>
-                            <p class="card-subtitle">≥ 6 personnes</p>
-                            <ul class="card-text small my-2">
-                                <li>Gambas poêlées</li>
-                                <li>Dos de Cabillaud grillé et sauce au beurre blanc à l’orange</li>
-                                <li>Tarte fine poire chocolat</li>
-                            </ul>
-                        </div>
-                        <div class="col-auto text-end">
-                            <h5>41€</h5>
-                        </div>
-                    </div>
-                    <div class="col text-end">
-                        <a href="#" class="btn btn-primary btn-sm stretched-link">+ de détails</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card text-bg-dark my-5" style="min-height: 170px;">
-                <img src="../images/menu_grillades.jpg" class="card-img object-fit-cover position-absolute top-0 start-0 w-100 h-100" style="filter: brightness(0.8);">
-                <div class="card-img-overlay position-relative">
-                    <div class="row m-1">
-                        <div class="col">
-                            <h5 class="card-title">Menu Grillades</h5>
-                            <p class="card-subtitle">≥ 8 personnes</p>
-                            <ul class="card-text small my-2">
-                                <li>Bruschetta poivrons et aubergines</li>
-                                <li>Brochettes mixtes</li>
-                                <li>Fondant chocolat et crème anglaise</li>
-                            </ul>
-                        </div>
-                        <div class="col-auto text-end">
-                            <h5>32€</h5>
-                        </div>
-                    </div>
-                    <div class="col text-end">
-                        <a href="#" class="btn btn-primary btn-sm stretched-link">+ de détails</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card text-bg-dark my-5" style="min-height: 170px;">
-                <img src="../images/menu_prestige.jpg" class="card-img object-fit-cover position-absolute top-0 start-0 w-100 h-100" style="filter: brightness(0.8);">
-                <div class="card-img-overlay position-relative">
-                    <div class="row m-1">
-                        <div class="col">
-                            <h5 class="card-title">Menu Prestige</h5>
-                            <p class="card-subtitle">≥ 4 personnes</p>
-                            <ul class="card-text small my-2">
-                                <li>Tataki de thon</li>
-                                <li>Saint-Jacques poêlées sur lit de patate douce et fondue de poireau</li>
-                                <li>Cheesecake et coulis de figues</li>
-                            </ul>
-                        </div>
-                        <div class="col-auto text-end">
-                            <h5>45€</h5>
-                        </div>
-                    </div>
-                    <div class="col text-end">
-                        <a href="#" class="btn btn-primary btn-sm stretched-link">+ de détails</a>
-                    </div>
-                </div>
-            </div>
+            <!-- Les cartes sont ajoutées ici par js/menus.js -->
+            <div id="menusList"></div>
         </article>
     </div>
 </section>
+
+<!-- Modèle d'une carte, copié par js/menus.js pour chaque menu -->
+<template id="menuTemplate">
+    <div class="card text-bg-dark my-5" style="min-height: 170px;">
+        <img src="/images/illustration_plat.jpg" alt="" class="card-img menu-image object-fit-cover position-absolute top-0 start-0 w-100 h-100" style="filter: brightness(0.8);">
+        <div class="card-img-overlay position-relative">
+            <div class="row m-1">
+                <div class="col">
+                    <h5 class="card-title menu-titre"></h5>
+                    <p class="card-subtitle menu-personnes"></p>
+                    <ul class="card-text small my-2 menu-plats"></ul>
+                </div>
+                <div class="col-auto text-end">
+                    <h5 class="menu-prix"></h5>
+                </div>
+            </div>
+            <div class="col text-end">
+                <a href="#" class="btn btn-primary btn-sm stretched-link">+ de détails</a>
+            </div>
+        </div>
+    </div>
+</template>
