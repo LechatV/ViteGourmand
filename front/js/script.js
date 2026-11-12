@@ -1,4 +1,8 @@
-const apiUrl = "http://127.0.0.1:8000/api/";
+let apiUrl = "http://127.0.0.1:8000/api/";
+
+if(window.location.hostname == "lechatv.alwaysdata.net"){
+    apiUrl = "https://lechatv.alwaysdata.net/back/api/";
+}
 
 const tokenCookieName = "accesstoken";
 const RoleCookieName = "role";
